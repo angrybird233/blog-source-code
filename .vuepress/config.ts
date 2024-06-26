@@ -33,10 +33,18 @@ export default defineUserConfig({
     },
     navbar: [
       { icon: "Home", text: "首页", link: "/" },
-      { icon: "Blog", text: "博客", link: "/blog/" },
-      { icon: "Apple", text: "杂谈", link: "/categories/reco/1/" },
-      { icon: "Categorical", text: "分类", link: "/categories/reco/1/" },
-      { icon: "Identification", text: "关于我", link: "/tags/tag1/1/" },
+      { icon: "Blog", text: "博客", link: "/blogs/category1/2018/121501" },
+      { icon: "Apple", text: "杂谈", link: "/blogs/category2/2016/121501" },
+      { 
+        icon: "Categories", 
+        text: "分类", 
+          children: [
+          { text: "Vue", link: "/docs/theme-reco/theme" },
+          { text: "React", link: "/blogs/other/guide" },
+          { text: "Typescript", link: "/blogs/other/home" },
+        ],
+      },
+      { icon: "Identification", text: "关于我", link: "/docs/aboutme/index" },
       // {
       //   text: "Docs",
       //   children: [
