@@ -7,6 +7,7 @@ export default defineUserConfig({
   title: "Beyourself's Blog",
   description: "Be yourself, Keep learning, then you can catch up with knowledge",
   bundler: viteBundler(),
+  dest: "dist",
   // bundler: webpackBundler(),
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
