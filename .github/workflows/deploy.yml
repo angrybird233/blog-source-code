@@ -25,21 +25,11 @@ jobs:
         run: npm run build  # 运行你的构建命令，例如 npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          git-config-name: angrybird233
-          git-config-email: angrybird1587254004@gmail.com
-          repository-name: angrybird233/blog
-          token: ${{ secrets.BLOG_GH_TOKEN }}
-          branch: github-pages # The branch the action should deploy to.
-          # folder: dist # The folder the action should deploy.
-          # target-folder: dist/typescript
-          # clean: true # Automatically remove deleted files from the deploy branch
-          commit-message: Deploy to GitHub Pages 
-          # git config --global user.name 'github-actions[bot]'
-          # git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # git add .
-          # git commit -m "Deploy to GitHub Pages"
-          # git push --force "https://${{ secrets.BLOG_GH_TOKEN }}@github.com/${{ github.repository }}.git" main:github-pages  # 指定目标分支
-        # env:
-          # NODE_AUTH_TOKEN: ${{ secrets.BLOG_GH_TOKEN }}
+        run:
+          git config --global user.name 'angrybird233'
+          git config --global user.email 'angrybird1587254004@gmail.com'
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push --force "https://${{ secrets.BLOG_GH_TOKEN }}@github.com/${{ github.repository }}.git" main:github-pages  # 指定目标分支
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.BLOG_GH_TOKEN }}
