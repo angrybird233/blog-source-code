@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '18.18.0'
 
@@ -25,9 +25,9 @@ jobs:
         run: npm run build  # 运行你的构建命令，例如 npm run build
 
       - name: Deploy
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        run:
+          git config --global user.name 'angrybird233'
+          git config --global user.email 'angrybird1587254004@gmail.com'
           git add .
           git commit -m "Deploy to GitHub Pages"
           git push --force "https://${{ secrets.BLOG_GH_TOKEN }}@github.com/${{ github.repository }}.git" main:github-pages  # 指定目标分支
