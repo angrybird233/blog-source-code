@@ -7,43 +7,16 @@ modules:
   - Footer
 bannerBrand:
   bgImage: '/bg.svg'
-  title: vuepress-reco
-  description: 一款简洁的 vuepress 博客 & 文档 主题。
-  tagline: vuepress-theme-reco 2.0 继续坚持简洁的风格，所有功能开箱即用，首页模块化组装，使用 tailwindcss 书写样式，将 Vite 作为默认编译器。你只需要负责内容创作，其他请交给我。
+  title: 学无止境，行以致远
+  description: Keep learning, then you can catch up with knowledge。
+  tagline: 在知识爆炸和AI快速发展的时代，大批的岗位被人工智能取代，我们如何才能在不被时代所淘汰？只有选择合适的领域并不断的学习积累，才能保持自己的竞争力。
   buttons:
-    - { text: Guide, link: '/docs/guide/introduce' }
-    - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
-  socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
+    - { text: 博客文章, link: '/docs/guide/introduce' }
+    - { text: 杂谈人生, link: '/docs/style-default-api/introduce', type: 'plain' }
 blog:
   socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/recoluan' }
-isShowTitleInHome: true
+    - { icon: 'LogoGithub', link: 'https://github.com/angrybird233' }
+isShowTitleInHome: true 
 actionText: About
 actionLink: /views/other/about
 ---
-
-## 快速开始
-
-**npx**
-
-```bash
-# 初始化，并选择 2.x
-npx @vuepress-reco/theme-cli init
-```
-
-**npm**
-
-```bash
-# 初始化，并选择 2.x
-npm install @vuepress-reco/theme-cli@1.0.7 -g
-theme-cli init
-```
-
-**yarn**
-
-```bash
-# 初始化，并选择 2.x
-yarn global add @vuepress-reco/theme-cli@1.0.7
-theme-cli init
-```

@@ -4,7 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
-  title: "beyourself-blog",
+  title: "Beyourself's Blog",
   description: "Be yourself, Keep learning, then you can catch up with knowledge",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
@@ -13,7 +13,7 @@ export default defineUserConfig({
     logo: "/logo1.png",
     author: "reco_luan",
     authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
+    docsRepo: "https://github.com/angrybird233/blog",
     docsBranch: "main",
     docsDir: "example",
     lastUpdatedText: "",
@@ -24,23 +24,25 @@ export default defineUserConfig({
           text: "module one",
           children: ["home", "theme"],
         },
-        {
+        { 
           text: "module two",
           children: ["api", "plugin"],
         },
       ],
     },
     navbar: [
-      { text: "Home", link: "/" },
-      { text: "Categories", link: "/categories/reco/1/" },
-      { text: "Tags", link: "/tags/tag1/1/" },
-      {
-        text: "Docs",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+      { icon: "Home", text: "首页", link: "/" },
+      { icon: "Blog", text: "博客", link: "/blog/" },
+      { icon: "Apple", text: "杂谈", link: "/categories/reco/1/" },
+      { icon: "Categorical", text: "分类", link: "/categories/reco/1/" },
+      { icon: "Identification", text: "关于我", link: "/tags/tag1/1/" },
+      // {
+      //   text: "Docs",
+      //   children: [
+      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+      //   ],
+      // },
     ],
     bulletin: {
       body: [
