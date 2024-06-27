@@ -24,7 +24,7 @@ jobs:
       with:
         repository: angrybird233/angrybird233.github.io  # 替换为你的目标仓库信息
         path: angrybird233.github.io
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
 
     - name: Copy files
       run: |
@@ -40,4 +40,4 @@ jobs:
         git commit -m "Deploy from source repository"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
