@@ -19,7 +19,8 @@ jobs:
 
     - name: Install dependencies and build
       run:
-        npm install 
+        npm cache clean --force
+        npm install --force
         npm run build
 
     - name: Deploy to GitHub Pages
