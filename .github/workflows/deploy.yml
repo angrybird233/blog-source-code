@@ -1,35 +1,29 @@
-name: Deploy GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # 监视 main 分支的变化
+      - main # 或者'master'，取决于你的默认分支是哪个
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.18.0' # 选择合适的Node.js版本
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18.18.0'
+    - name: Install dependencies and build
+      run: |
+        npm install 
+        npm run build
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build  # 运行你的构建命令，例如 npm run build
-
-      - name: Deploy
-        run:
-          git config --global user.name "angrybird233"
-          git config --global user.email "angrybird1587254004@gmail.com"
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push --force "https://${{ secrets.BLOG_GH_TOKEN }}@github.com/${{ github.repository }}.git" main:github-pages  # 指定目标分支
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.BLOG_GH_TOKEN }}
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.BLOG_GH_TOKEN }}
+        publish_dir: ./dist
