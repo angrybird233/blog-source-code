@@ -10,16 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '18.18.0' # 选择合适的Node.js版本
 
     - name: Install dependencies and build
       run:
-        npm cache clean --force
         npm install --force
         npm run build
 
