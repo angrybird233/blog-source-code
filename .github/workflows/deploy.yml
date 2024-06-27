@@ -19,11 +19,25 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to another repository
-      uses: cpina/github-action-push-to-another-repository@v1.7.2
+    - name: Checkout target repository
+      uses: actions/checkout@v2
       with:
-        source-directory: 'dist'
-        destination-github-username: 'angrybird233'
-        destination-repository-name: 'angrybird233.github.io'
-        target-branch: 'main'
-        ssh-deploy-key: ${{ secrets.SSH_DEPLOY_KEY }}
+        repository: angrybird233/angrybird233.github.io  # 替换为你的目标仓库信息
+        path: angrybird233.github.io
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Copy files
+      run: |
+        rm -rf angrybird233.github.io/*
+        cp -r dist/* angrybird233.github.io/
+
+    - name: Commit and push changes
+      run: |
+        cd target-repo
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git add .
+        git commit -m "Deploy from source repository"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
