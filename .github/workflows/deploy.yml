@@ -18,7 +18,7 @@ jobs:
         node-version: '18.18.0' # 选择合适的Node.js版本
 
     - name: Install dependencies and build
-      run: |
+      run:
         npm install 
         npm run build
 
