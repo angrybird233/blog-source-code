@@ -7,7 +7,6 @@ export default defineUserConfig({
   title: "BeYourself's Blog",
   description: "Be yourself, Keep learning, then you can catch up with knowledge",
   bundler: viteBundler(),
-  base: "/blog/",
   dest: "dist",
   // bundler: webpackBundler(),
   theme: recoTheme({

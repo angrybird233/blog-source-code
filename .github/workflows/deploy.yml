@@ -3,27 +3,27 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # 或者'master'，取决于你的默认分支是哪个
+      - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18.18.0' # 选择合适的Node.js版本
+    - name: Checkout source code
+      uses: actions/checkout@v3
 
-    - name: Install dependencies and build
-      run:
-        npm install --force
-        npm run build
+    - name: Install dependencies
+      run: npm install
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to another repository
+      uses: cpina/github-action-push-to-another-repository@v1.7.2
       with:
-        github_token: ${{ secrets.BLOG_GH_TOKEN }}
-        publish_dir: ./dist
+        source-directory: 'dist'
+        destination-github-username: 'angrybird233'
+        destination-repository-name: 'angrybird233.github.io'
+        target-branch: 'main'
+        github-token: ${{ secrets.GH_TOKEN }}
