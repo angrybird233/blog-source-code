@@ -28,7 +28,8 @@ jobs:
 
     - name: Copy files
       run: |
-        rm -rf angrybird233.github.io/*
+        shopt -s extglob  # 启用扩展模式
+        rm -rf angrybird233.github.io/!(.git|README.md)  # 删除除了 .git 和 README.md 文件之外的所有文件和目录
         cp -r dist/* angrybird233.github.io/
 
     - name: Commit and push changes
