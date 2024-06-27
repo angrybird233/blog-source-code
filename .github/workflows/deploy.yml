@@ -26,4 +26,4 @@ jobs:
         destination-github-username: 'angrybird233'
         destination-repository-name: 'angrybird233.github.io'
         target-branch: 'main'
-        github-token: ${{ secrets.GH_TOKEN }}
+        ssh-deploy-key: ${{ secrets.SSH_DEPLOY_KEY }}
