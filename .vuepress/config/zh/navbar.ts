@@ -4,20 +4,20 @@ export const navbar = [
     text: '博客文章', 
     icon: 'Document',
     children: [
-      { text: '前端', link: '/categories/Frontend/1.html' },
-      { text: '后端', link: '/categories/Backend/1.html' },
-      { text: '运维', link: '/categories/DevOps/1.html' },
-      { text: '杂谈', link: '/categories/Thoughts/1.html' },
-      { text: '其他', link: '/categories/Others/1.html' },
+      { text: '前端', link: '/categories/Frontend/1' },
+      { text: '后端', link: '/categories/Backend/1' },
+      { text: '运维', link: '/categories/DevOps/1' },
+      { text: '杂谈', link: '/categories/Thoughts/1' },
+      { text: '其他', link: '/categories/Others/1' },
     ],
    },
   { 
     text: '进阶文档', 
     icon: 'Book',
     children: [
-      { text: '前端编程之道', link: '/docs/how-to-code/index' },
+      { text: '前端编程之道', link: '/docs/how-to-code/' },
     ],
    },
-  { text: '留言板', link: '/docs/message-board', icon: 'Chat' },
+  { text: '效率神器', link: '/docs/efficiency-tools/vscode-snippets', icon: 'Chat' },
   { text: '关于我', link: '/docs/introduction/index', icon: 'User' },
 ]

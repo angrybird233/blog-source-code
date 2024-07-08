@@ -4,13 +4,21 @@ export const series = {
     {
       text: '前端编程之道',
       children: [
-        'index',
-        '01-Good-Frontend-Code',
-        '02-Improving-Code-Readability',
-        '03-Promoting-Code-Reusability',
-        '04-Code-Decoupling-and-Enhancing',
-        '05-Enhancing-Code-Scalability',
-        '06-Frontend-Components'
+        '/docs/how-to-code/01-Good-Frontend-Code',
+        '/docs/how-to-code/02-Improving-Code-Readability',
+        '/docs/how-to-code/03-Promoting-Code-Reusability',
+        '/docs/how-to-code/04-Code-Decoupling-and-Enhancing',
+        '/docs/how-to-code/05-Enhancing-Code-Scalability',
+        '/docs/how-to-code/06-Frontend-Components'
+      ]
+    }
+  ],
+  '/docs/efficiency-tools/': [
+    {
+      text: '效率神器',
+      children: [
+        '/docs/efficiency-tools/shortcut-key',
+        '/docs/efficiency-tools/vscode-snippets',
       ]
     }
   ],
