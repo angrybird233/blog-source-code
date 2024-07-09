@@ -1,0 +1,154 @@
+
+
+div[class*=language-] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c8c8c852
+}
+
+.dark div[class*=language-] {
+  border-color: #52525952
+}
+
+div[class*=language-] {
+  border-radius: .5rem;
+  color: rgb(60 60 67)
+}
+
+.dark div[class*=language-] {
+  color: #fffff5db
+}
+
+div[class*=language-] {
+  background-color: rgb(32 32 34) !important
+}
+
+.dark div[class*=language-] {
+  background-color: rgb(32 32 34)
+}
+
+div[class*=language-]:before {
+  position: absolute;
+  top: .25rem;
+  right: .75rem;
+  z-index: 10;
+  font-size: .75rem;
+  line-height: 1rem;
+  color: rgb(156 163 175)
+}
+
+
+div[class*=language-] .code-copy-btn {
+  color: rgb(60 60 67)
+}
+
+.dark div[class*=language-] .code-copy-btn {
+  color: #fffff5db
+}
+
+div[class*=language-] .code-copy-btn {
+  background-color: rgb(255 255 255)
+}
+
+.dark div[class*=language-] .code-copy-btn {
+  background-color: rgb(22 22 23)
+}
+
+
+
+div[class*=language-] .line {
+  color: #9CDCFE !important;
+}
+div[class*=language-].line-numbers-mode .line-numbers {
+  color: rgb(60 60 67)
+}
+
+.dark div[class*=language-].line-numbers-mode .line-numbers {
+  color: #fffff5db
+}
+
+div[class*=language-].line-numbers-mode .line-numbers {
+  background: rgb(32 32 34) !important;
+}
+
+.dark div[class*=language-].line-numbers-mode .line-numbers {
+  background-color: rgb(32 32 34) !important
+}
+
+div[class*=language-].line-numbers-mode .line-numbers {
+  color: rgb(156 163 175);
+}
+
+
+div[class*=language-] .highlight-lines .highlight-line {
+  background-color: #6b72801a !important
+}
+
+.dark div[class*=language-] .highlight-lines .highlight-line {
+  background-color: #f9fafb1a !important
+}
+
+code[class*=language-],pre[class*=language-] {
+  color: rgb(255 251 235) !important
+}
+
+.dark code[class*=language-],.dark pre[class*=language-] {
+  color: rgb(255 251 235) !important
+}
+
+/* 注释和文档类型声明的颜色 */
+.token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata {
+  color: #999
+}
+/* 标点符号的颜色 */
+.token.punctuation {
+  color: #ccc
+}
+
+/* HTML标签、命名空间和删除的文本颜色 */
+.token.tag,.token.namespace,.token.deleted {
+  color: #e2777a !important
+}
+
+/* 属性名称的颜色 */
+.token.attr-name {
+  color: #f771f9 !important
+}
+
+/* 函数名称的颜色 */
+.token.function-name {
+  color: #def285 !important
+}
+
+/* 布尔值、数字和函数的颜色 */
+.token.boolean,.token.number,.token.function {
+  color: #f08d49
+}
+/* 属性、值、类名、常量和符号的颜色 */
+.token.property,.token.value,.token.class-name,.token.constant,.token.symbol {
+  /* color: #f8c555; */
+  color: rgb(214,217,204) !important
+}
+/* 选择器、重要的规则、at-rule、关键词和内置函数的颜色 */
+.token.selector,.token.important,.token.atrule,.token.keyword,.token.builtin {
+  color: rgb(193,162,255) !important
+}
+/* 字符串、字符、属性值、正则表达式和变量的颜色 */
+.token.string,.token.char,.token.attr-value,.token.regex,.token.variable {
+  /* color: #7ec699 */
+  color: #CE9178 !important
+}
+/* 运算符、实体和URL的颜色 */
+.token.operator,.token.entity,.token.url {
+  color: #CE9178 !important
+}
+/* 标点符号的颜色，重复定义以确保覆盖 */
+.token.punctuation {
+  color: rgb(218,112,214) !important
+}
+/* 黑暗模式下的标点符号颜色 */
+.dark .token.punctuation {
+  color: rgb(218,112,214) !important
+}
+
+
