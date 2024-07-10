@@ -39,11 +39,13 @@ div[class*=language-]:before {
 
 
 div[class*=language-] .code-copy-btn {
-  color: rgb(60 60 67)
+  color: rgb(60 60 67);
+  right: 80px !important;
 }
 
 .dark div[class*=language-] .code-copy-btn {
-  color: #fffff5db
+  color: #fffff5db;
+  right: 80px !important;
 }
 
 div[class*=language-] .code-copy-btn {

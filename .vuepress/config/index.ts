@@ -13,9 +13,9 @@ export const themeConfig = {
   },
   logo: '/logo.png',
   author: 'angrybird233',
-  docsRepo: 'https://github.com/angrybird233',
+  docsRepo: 'https://github.com/angrybird233/blog-source-code',
   docsBranch: 'main',
-  docsDir: '/docs',
+  docsDir: '/docs'
   // algolia: {
   //   appId: 'DOKVCRGZJM',
   //   apiKey: '06d150dca9a0b9e68ae34ff8281843d8',
