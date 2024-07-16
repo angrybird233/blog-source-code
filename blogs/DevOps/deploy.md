@@ -1,7 +1,7 @@
 ---
 title: Pages 部署
 date: 2019-05-14
-author: angrybird233
+author: recoluan
 tags:
  - CI
 categories:

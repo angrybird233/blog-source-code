@@ -3,12 +3,12 @@ export const series = {
     {
       text: '前端编程之道',
       children: [
-        'good-frontend-code',
-        'improving-code-readability',
-        'promoting-code-reusability',
-        'code-decoupling-and-enhancing',
-        'enhancing-code-scalability',
-        'frontend-components'
+        '/docs/how-to-code/good-frontend-code',
+        '/docs/how-to-code/improving-code-readability',
+        '/docs/how-to-code/promoting-code-reusability',
+        '/docs/how-to-code/code-decoupling-and-enhancing',
+        '/docs/how-to-code/enhancing-code-scalability',
+        '/docs/how-to-code/frontend-components'
       ]
     }
   ],

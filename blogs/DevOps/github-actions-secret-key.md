@@ -1,7 +1,7 @@
 ---
 title: 如何在 GitHub Actions 时使用 secretKey
 date: 2020-03-20
-author: angrybird233
+author: recoluan
 tags:
  - CI
  - Github Actions
