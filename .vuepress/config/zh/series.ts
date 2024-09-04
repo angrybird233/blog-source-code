@@ -2,14 +2,7 @@ export const series = {
   '/docs/how-to-code/': [
     {
       text: '前端编程之道',
-      children: [
-        '/docs/how-to-code/good-frontend-code',
-        '/docs/how-to-code/improving-code-readability',
-        '/docs/how-to-code/promoting-code-reusability',
-        '/docs/how-to-code/code-decoupling-and-enhancing',
-        '/docs/how-to-code/enhancing-code-scalability',
-        '/docs/how-to-code/frontend-components'
-      ]
+      children: ['01','02','03','04','05','06' ]
     }
   ],
   '/docs/efficiency-tools/': [
