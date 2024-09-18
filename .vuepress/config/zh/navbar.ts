@@ -15,7 +15,7 @@ export const navbar = [
     text: '进阶文档', 
     icon: 'Book',
     children: [
-      { text: '前端编程之道', link: '/docs/how-to-code/01' },
+      { text: '前端编程之道', link: '/docs/how-code/01' },
     ],
    },
   { text: '效率神器', link: '/docs/efficiency-tools/vscode-snippets', icon: 'Chat' },
