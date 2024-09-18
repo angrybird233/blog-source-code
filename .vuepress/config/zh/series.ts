@@ -1,5 +1,5 @@
 export const series = {
-  '/docs/how-to-code/': [
+  '/docs/how-code/': [
     {
       text: '前端编程之道',
       children: ['01','02','03','04','05','06' ]
